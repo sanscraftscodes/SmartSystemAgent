@@ -10,7 +10,7 @@
 #include "devices/BrightnessDevice.h"
 #include "devices/VolumeDevice.h"
 #include "devices/MusicPlayerDevice.h"
-// #include "devices/VoiceAssistantDevice.h"
+#include "devices/VoiceAssistantDevice.h"
 #include "devices/AppLauncherDevice.h"
 #include "devices/WifiDevice.h"
 #include "devices/BluetoothDevice.h"
@@ -21,10 +21,11 @@ int main() {
     dm.registerDevice(std::make_unique<BrightnessDevice>());
     dm.registerDevice(std::make_unique<VolumeDevice>());
     dm.registerDevice(std::make_unique<MusicPlayerDevice>());
-    // dm.registerDevice(std::make_unique<VoiceAssistantDevice>());
+    dm.registerDevice(std::make_unique<VoiceAssistantDevice>());
     dm.registerDevice(std::make_unique<AppLauncherDevice>());
     dm.registerDevice(std::make_unique<WifiDevice>());
     dm.registerDevice(std::make_unique<BluetoothDevice>());
+    
 
     std::cout << "SmartSys Agent (console)\n";
     std::cout << "Available modules:";

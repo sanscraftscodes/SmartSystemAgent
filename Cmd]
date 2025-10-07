@@ -1,0 +1,18 @@
+SmartSys Agent (console)
+Available modules: Battery Brightness Volume MusicPlayer VoiceAssistant AppLauncher WiFi Bluetooth
+
+Example commands:
+  SetBrightness 60
+  ShowBattery
+  SetVolume 30
+  GetVolume
+  SetWiFi On
+  SetBluetooth Off
+  PlayMusic C:\\path\\song.wav
+  StopMusic
+  OpenApp "VisualStudio.exe"  (searches common folders)
+  OpenPDF "report.pdf"
+  Speak "Hello team"
+Type 'exit' to quit.
+
+Command> Command> 
